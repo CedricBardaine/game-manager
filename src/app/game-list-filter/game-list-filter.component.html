@@ -1,0 +1,10 @@
+<form  class="contact1-form " action="">
+  <button class="contact1-form-btn" name="filter">Filter</button> <br>
+  <button class="contact1-form-btn" name="raz">RAZ</button> <br>
+  <input class="input1" type="text" id="selectNom" placeholder="Half-life..."> <br> 
+    <select name="" id="selectType"  [value]="jeuSelector">
+      <option *ngFor="let jeu of typesJeu" [value]="jeu"> {{jeu}} </option>
+    </select> <br>
+  <input class="input1" type="text" id="selectEditeur" placeholder="Sierra...">
+</form>
+

@@ -1,0 +1,13 @@
+<app-game-list-filter></app-game-list-filter>
+
+<br>
+<hr>
+<br>
+
+<div class="card" *ngFor="let jeu of listeJeux" >
+    <h2>{{jeu.nom}}</h2> 
+    <p>Type : {{jeu.type}}</p>
+    <img [src]="jeu.image" alt="image" style="width:100%">
+    <p>Note : {{jeu.note}}/10</p>
+    <p>{{trimDescription( jeu.description , 120)  }} </p>
+  </div>
