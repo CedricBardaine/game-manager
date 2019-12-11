@@ -7,7 +7,7 @@
 <div class="card" *ngFor="let jeu of listeJeux" >
     <h2>{{jeu.nom}}</h2> 
     <p>Type : {{jeu.type}}</p>
-    <img [src]="jeu.image" alt="image" style="width:100%">
+    <img [src]="jeu.image" alt="image" >
     <p>Note : {{jeu.note}}/10</p>
     <p>{{trimDescription( jeu.description , 120)  }} </p>
   </div>

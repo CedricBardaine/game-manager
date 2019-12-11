@@ -1,10 +1,12 @@
 <form  class="contact1-form " action="">
-  <button class="contact1-form-btn" name="filter">Filter</button> <br>
-  <button class="contact1-form-btn" name="raz">RAZ</button> <br>
-  <input class="input1" type="text" id="selectNom" placeholder="Half-life..."> <br> 
-    <select name="" id="selectType"  [value]="jeuSelector">
+  <button class="buttonGrey" name="filter">Filter</button> 
+  <button class="buttonGrey" name="raz">RAZ</button> 
+  <br>
+  Jeu : <input class="w3-input" type="text" id="selectNom" placeholder="Half-life..."> 
+  Éditeur : <input class="w3-input" type="text" id="selectEditeur" placeholder="Sierra...">
+  Type : <br> <select class="w3-select" name=""  id="selectType"  [value]="jeuSelector">
       <option *ngFor="let jeu of typesJeu" [value]="jeu"> {{jeu}} </option>
-    </select> <br>
-  <input class="input1" type="text" id="selectEditeur" placeholder="Sierra...">
+    </select> 
+  
 </form>
 
