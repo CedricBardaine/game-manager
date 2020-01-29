@@ -13,9 +13,12 @@
       <img [src]="jeu.image" alt="image" >
       <p>Note : {{jeu.note}}/10</p>
       <p>{{trimDescription( jeu.description , 120)  }} </p>
-      <button (click)="onFollow($event, jeu)">Follow</button>
-      <button (click)="onShare($event, jeu)">Share</button>
-      <button (click)="onBuy($event, jeu)">Buy</button>
+      
+      <app-game-actions 
+      (follow)="onFollow(jeu)" 
+      (share)="onShare(jeu)" 
+      (achat)="onShare(jeu)"
+      ></app-game-actions>
     </div>
   </li>
 </ul> 

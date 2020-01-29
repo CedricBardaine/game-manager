@@ -72,22 +72,19 @@ export class GameListComponent implements OnInit {
       else return txt ; 
     }
 
-    onFollow(event: MouseEvent , jeu: Jeu) {
-      event.preventDefault() ; 
-      alert(`Follow the game nammed : ${jeu.nom}`)
-    }
-    onShare(event: MouseEvent , jeu: Jeu) {
-      event.preventDefault() ; 
-      alert('Share the game nammed : '+ jeu.nom)
-    }
-    onBuy(event: MouseEvent , jeu: Jeu) {
-      event.preventDefault() ; 
-      alert('Buy the game nammed : '+ jeu.nom)
-    }
-    
+   
     constructor() { }
     
     ngOnInit() {
     }
     
+    onFollow(game: Jeu) {
+      alert(`Follow the game nammed ${game.nom}`)
+    }
+    onShare(game: Jeu) {
+      alert(`Share the game nammed ${game.nom}`)
+    }
+    onBuy(game: Jeu) {
+      alert(`Buy the game nammed ${game.nom}`)
+    }
   }
