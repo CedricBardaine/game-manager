@@ -72,10 +72,11 @@ export class GameListComponent implements OnInit {
       else return txt ; 
     }
 
-    onClickActionButton(action, nomJeu) {
-      return alert(action + " a ete effectue sur le jeu : "+ nomJeu) ; 
+
+    onClickButtonGame(action , nomJeu) {
+      return alert(action + " a ete effectue sur le jeu "+ nomJeu) ; 
     }
-    
+
     constructor() { }
     
     ngOnInit() {
