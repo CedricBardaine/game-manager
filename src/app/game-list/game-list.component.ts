@@ -81,5 +81,15 @@ export class GameListComponent implements OnInit {
     
     ngOnInit() {
     }
+
+    width = 30 ; // rem
+
+    sizeUp() {
+      this.width += 1 ; 
+    }
+    
+    sizeDown() {
+      this.width -= 1 ; 
+    }
     
   }

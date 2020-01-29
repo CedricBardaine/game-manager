@@ -4,8 +4,13 @@
 <hr>
 <br>
 
+<div>
+  <button class="sizeButton" (click)="sizeDown()"> - </button>
+  <button class="sizeButton" (click)="sizeUp()" > + </button>
+</div>
+
 <ul class="cards">
-  <li class="cards_item" *ngFor="let jeu of listeJeux" >
+  <li class="cards_item" *ngFor="let jeu of listeJeux" [ngStyle]="{width: width + 'rem'}">
     <div class="card">
       
       <h2>{{jeu.nom}}</h2> 

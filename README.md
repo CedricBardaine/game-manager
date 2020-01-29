@@ -1,6 +1,7 @@
 # TP
-Exercice 5 
-Passer la souris au dessus d’une card ajoutera une légère bordure autour de la card.
+Exercice 6  
+Ajouter   deux   boutons   «-»   et   «+»   dans   GameList.   
+ Ces   boutons   servirons   respectivement   à diminuer ou augmenter la largeur des cards de 10px.
 
 
 # GameManager
