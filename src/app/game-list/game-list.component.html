@@ -13,9 +13,9 @@
       <img [src]="jeu.image" alt="image" >
       <p>Note : {{jeu.note}}/10</p>
       <p>{{trimDescription( jeu.description , 120)  }} </p>
-      <button (click)="onClickActionButton('Follow', jeu.nom)">Follow</button>
-      <button (click)="onClickActionButton('Share', jeu.nom)">Share</button>
-      <button (click)="onClickActionButton('Buy', jeu.nom)">Buy</button>
+      <button (click)="onFollow($event, jeu)">Follow</button>
+      <button (click)="onShare($event, jeu)">Share</button>
+      <button (click)="onBuy($event, jeu)">Buy</button>
     </div>
   </li>
 </ul> 

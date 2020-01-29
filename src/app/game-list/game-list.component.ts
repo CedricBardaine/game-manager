@@ -72,8 +72,17 @@ export class GameListComponent implements OnInit {
       else return txt ; 
     }
 
-    onClickActionButton(action, nomJeu) {
-      return alert(action + " a ete effectue sur le jeu : "+ nomJeu) ; 
+    onFollow(event: MouseEvent , jeu: Jeu) {
+      event.preventDefault() ; 
+      alert(`Follow the game nammed : ${jeu.nom}`)
+    }
+    onShare(event: MouseEvent , jeu: Jeu) {
+      event.preventDefault() ; 
+      alert('Share the game nammed : '+ jeu.nom)
+    }
+    onBuy(event: MouseEvent , jeu: Jeu) {
+      event.preventDefault() ; 
+      alert('Buy the game nammed : '+ jeu.nom)
     }
     
     constructor() { }
