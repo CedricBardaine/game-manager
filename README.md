@@ -1,3 +1,8 @@
+# TP
+Exercice 1  
+Nous allons faire une implémentation «précaire» des boutons follow/share/buy.  
+Appuyer   sur   l’un   de   ces   boutons   appellera   la   méthode «alert» en précisant quel bouton a été cliqué, et sur quel jeu.
+
 # GameManager
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
