@@ -14,19 +14,8 @@
       <p>Note : {{jeu.note}}/10</p>
       <p>{{trimDescription( jeu.description , 120)  }} </p>
       <app-action-button 
-      action="Follow" 
       [nomJeu]="jeu.nom" 
-      (clickFromButton)="onClickButtonGame('Follow' , jeu.nom)"
-      ></app-action-button>
-      <app-action-button 
-      action="Share" 
-      [nomJeu]="jeu.nom" 
-      (clickFromButton)="onClickButtonGame('Share' , jeu.nom)"
-      ></app-action-button>
-      <app-action-button 
-      action="Buy" 
-      [nomJeu]="jeu.nom" 
-      (clickFromButton)="onClickButtonGame('Buy' , jeu.nom)"
+      (clickEvent)="onClickEvent($event, jeu.nom)"
       ></app-action-button>
     </div>
   </li>

@@ -73,7 +73,7 @@ export class GameListComponent implements OnInit {
     }
 
 
-    onClickButtonGame(action , nomJeu) {
+    onClickEvent(action , nomJeu) {
       return alert(action + " a ete effectue sur le jeu "+ nomJeu) ; 
     }
 

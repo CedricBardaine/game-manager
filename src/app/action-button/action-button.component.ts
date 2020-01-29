@@ -13,14 +13,19 @@ export class ActionButtonComponent implements OnInit {
   }
 
   @Input()
-   action: string; 
-  @Input()
    nomJeu: string; 
+ 
+   @Output() clickEvent = new EventEmitter<string>() ; 
 
-   @Output() clickFromButton = new EventEmitter<void>();  
-
-  onClickActionButon():void {
-    return this.clickFromButton.emit(); 
+   
+  onClickFollow():void {
+    return this.clickEvent.emit("Follow") ; 
+  }
+  onClickShare():void {
+    return this.clickEvent.emit("Share") ; 
+  }
+  onClickBuy():void {
+    return this.clickEvent.emit("Buy") ; 
   }
 
 

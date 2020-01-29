@@ -1,8 +1,7 @@
 # TP
-Exercice 2  
-Extraire les boutons follow/share/buy dans un sous composant.  
-Ce composant enfant emmétra trois sorties différentes (follow/share/buy).  
-Le composant parent (GameList) fera en sorte de continuer à afficher les messages demandés lors de l’exercice 1.
+Exercice 3  
+Nous   allons  adapter   l’exercice   2   pour   n’avoir   plus  qu’une   seule   sortie   nommée   «click» *(clickEvent dans mon code)*.  
+Cette sortie fournira le type d’action que l’utilisateur a choisi (follow/share/buy).
 
 
 # GameManager
