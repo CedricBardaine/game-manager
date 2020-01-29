@@ -1,7 +1,8 @@
 # TP
-Exercice 1  
-Nous allons faire une implémentation «précaire» des boutons follow/share/buy.  
-Appuyer   sur   l’un   de   ces   boutons   appellera   la   méthode «alert» en précisant quel bouton a été cliqué, et sur quel jeu.
+Exercice 2  
+Extraire les boutons follow/share/buy dans un sous composant.  
+Ce composant enfant emmétra trois sorties différentes (follow/share/buy).  
+Le composant parent (GameList) fera en sorte de continuer à afficher les messages demandés lors de l’exercice 1.
 
 
 # GameManager
