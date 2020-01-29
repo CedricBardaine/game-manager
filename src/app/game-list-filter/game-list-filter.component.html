@@ -5,7 +5,7 @@
   <br>
   Jeu : <input (change)="onChange('name', $event.target.value)" class="w3-input" type="text" id="selectNom" placeholder="Half-life..."> 
   Éditeur : <input (change)="onChange('editor', $event.target.value)" class="w3-input" type="text" id="selectEditeur" placeholder="Sierra...">
-  Type : <br> <select (change)="onChange('category', $event.target.value)" class="w3-select" name=""  id="selectType"  [value]="jeuSelector">
+  Type : <br> <select (change)="onChange('category', $event.target.value)" class="w3-select" name=""  id="selectType" >
       <option *ngFor="let jeu of typesJeu" [value]="jeu"> {{jeu}} </option>
     </select> 
     
