@@ -1,7 +1,6 @@
 # TP
-Exercice 3  
-Nous   allons  adapter   l’exercice   2   pour   n’avoir   plus  qu’une   seule   sortie   nommée   «click» *(clickEvent dans mon code)*.  
-Cette sortie fournira le type d’action que l’utilisateur a choisi (follow/share/buy).
+Exercice 4  
+Si ce n’est pas déjà fait, définir les actions possibles dans une énumération et adapter le reste ducode (typage, ...).
 
 
 # GameManager

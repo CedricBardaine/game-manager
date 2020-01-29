@@ -19,14 +19,18 @@ export class ActionButtonComponent implements OnInit {
 
    
   onClickFollow():void {
-    return this.clickEvent.emit("Follow") ; 
+    return this.clickEvent.emit(Action.FOLLOW) ; 
   }
   onClickShare():void {
-    return this.clickEvent.emit("Share") ; 
+    return this.clickEvent.emit(Action.SHARE) ; 
   }
   onClickBuy():void {
-    return this.clickEvent.emit("Buy") ; 
+    return this.clickEvent.emit(Action.BUY) ; 
   }
 
-
+}
+enum Action {
+  FOLLOW = "Follow",
+  SHARE = "Share",
+  BUY = "Buy",
 }
