@@ -1,4 +1,3 @@
-{{ form | json }}
 
 <form  class="contact1-form " (submit)="onSubmit($event)">
   <button class="buttonGrey" name="filter" >Filter</button> 
@@ -9,6 +8,10 @@
   Type : <br> <select (change)="onChange('category', $event.target.value)" class="w3-select" name=""  id="selectType"  [value]="jeuSelector">
       <option *ngFor="let jeu of typesJeu" [value]="jeu"> {{jeu}} </option>
     </select> 
+    
+  </form>
   
-</form>
-
+  <small class="littleInfo">
+    {{ form['name'] }} {{form.editor}} {{form.category}}
+  </small>
+  

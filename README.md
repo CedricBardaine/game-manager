@@ -1,10 +1,9 @@
-# TP
-Exercice 8  
-Appuyer sur le bouton «filtrer» filtrera la liste des jeux.  
-Nous utiliserons l’événement «change» sur les input/select pour récupérer les changements de valeurs.
-
-
 # GameManager
+This is an app made with Angular that handles local game data. And you can filter the game-list by typing in the form above.  
+Simple.
+
+
+# GameManager : Angular ℹ
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 

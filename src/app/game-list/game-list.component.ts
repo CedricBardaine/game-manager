@@ -93,8 +93,8 @@ export class GameListComponent implements OnInit {
     }
 
     sizeUp() { this.width += 1 ; }
-    
     sizeDown() { this.width -= 1 ; }
+    sizeDefault() { this.width = 30 ; }
 
     onFilter(filterForm: GameFilter ) {
       this.listeJeuxFiltree = this.listeJeux
