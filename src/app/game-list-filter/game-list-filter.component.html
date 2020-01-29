@@ -1,10 +1,12 @@
-<form  class="contact1-form " action="">
-  <button class="buttonGrey" name="filter">Filter</button> 
-  <button class="buttonGrey" name="raz">RAZ</button> 
+{{ form | json }}
+
+<form  class="contact1-form " (submit)="onSubmit($event)">
+  <button class="buttonGrey" name="filter" >Filter</button> 
+  <button class="buttonGrey" name="raz" (click)="onReset()">RAZ</button> 
   <br>
-  Jeu : <input class="w3-input" type="text" id="selectNom" placeholder="Half-life..."> 
-  Éditeur : <input class="w3-input" type="text" id="selectEditeur" placeholder="Sierra...">
-  Type : <br> <select class="w3-select" name=""  id="selectType"  [value]="jeuSelector">
+  Jeu : <input (change)="onChange('name', $event.target.value)" class="w3-input" type="text" id="selectNom" placeholder="Half-life..."> 
+  Éditeur : <input (change)="onChange('editor', $event.target.value)" class="w3-input" type="text" id="selectEditeur" placeholder="Sierra...">
+  Type : <br> <select (change)="onChange('category', $event.target.value)" class="w3-select" name=""  id="selectType"  [value]="jeuSelector">
       <option *ngFor="let jeu of typesJeu" [value]="jeu"> {{jeu}} </option>
     </select> 
   

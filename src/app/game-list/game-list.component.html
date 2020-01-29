@@ -1,4 +1,4 @@
-<app-game-list-filter></app-game-list-filter>
+<app-game-list-filter (filter)="onFilter($event)"></app-game-list-filter>
 
 <br>
 <hr>
@@ -10,7 +10,7 @@
 </div>
 
 <ul class="cards">
-  <li class="cards_item" *ngFor="let jeu of listeJeux" [ngStyle]="{width: width + 'rem'}">
+  <li class="cards_item" *ngFor="let jeu of listeJeuxFiltree" [ngStyle]="{width: width + 'rem'}">
     <div class="card">
       
       <h2>{{jeu.nom}}</h2> 

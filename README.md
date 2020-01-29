@@ -1,7 +1,7 @@
 # TP
-Exercice 6  
-Ajouter   deux   boutons   «-»   et   «+»   dans   GameList.   
- Ces   boutons   servirons   respectivement   à diminuer ou augmenter la largeur des cards de 10px.
+Exercice 8  
+Appuyer sur le bouton «filtrer» filtrera la liste des jeux.  
+Nous utiliserons l’événement «change» sur les input/select pour récupérer les changements de valeurs.
 
 
 # GameManager

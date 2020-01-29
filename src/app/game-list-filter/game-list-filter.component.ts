@@ -1,4 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output , EventEmitter} from '@angular/core';
+
+export interface GameFilter {
+  name: string;
+  category: string; 
+  editor: string;
+}
 
 @Component({
   selector: 'app-game-list-filter',
@@ -6,11 +12,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./game-list-filter.component.css']
 })
 export class GameListFilterComponent implements OnInit {
-  typesJeu = ["rpg", "plateforme", "fps", "combat" ] ; 
-
   constructor() { }
-
-  ngOnInit() {
+  ngOnInit() { }
+  
+  
+  typesJeu = ["rpg", "plateforme", "fps", "combat" ] ; 
+  
+  form: GameFilter = {name: '' , category: '' , editor: ''} ;
+  
+  @Output() filter = new EventEmitter<GameFilter>()
+  
+  
+  onChange(field: string , value: string) {
+    value = value.trim().toLowerCase() ; 
+    this.form[field] = value ; 
+  }
+  
+  onSubmit(event: any) {
+    event.preventDefault() ; 
+    this.filter.emit(this.form) ;
   }
 
+  onReset() {
+    this.form = {name: '' , category: '' , editor: ''} ; 
+    this.filter.emit(this.form) ; 
+  }
+  
 }
