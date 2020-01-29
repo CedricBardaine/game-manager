@@ -1,6 +1,6 @@
 # TP
-Exercice 4  
-Si ce n’est pas déjà fait, définir les actions possibles dans une énumération et adapter le reste ducode (typage, ...).
+Exercice 5 
+Passer la souris au dessus d’une card ajoutera une légère bordure autour de la card.
 
 
 # GameManager
