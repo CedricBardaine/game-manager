@@ -1,7 +1,7 @@
 # TP
-Exercice 1  
-Nous allons faire une implémentation «précaire» des boutons follow/share/buy.  
-Appuyer   sur   l’un   de   ces   boutons   appellera   la   méthode «alert» en précisant quel bouton a été cliqué, et sur quel jeu.
+Exercice 3  
+Nous   allons  adapter   l’exercice   2   pour   n’avoir   plus  qu’une   seule   sortie   nommée   «click».    
+Cettes ortie fournira le type d’action que l’utilisateur a choisi (follow/share/buy).
 
 
 # GameManager
