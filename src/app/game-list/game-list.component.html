@@ -10,7 +10,9 @@
   <button class="sizeButton" (click)="sizeDefault()" > 100% </button>
 </div>
 
-<ul class="cards">
+<ng-template #loading>Chargement ...</ng-template>  
+
+<ul class="cards" *ngIf="listeJeux ; else loading">
   <li class="cards_item" *ngFor="let jeu of listeJeuxFiltree" [ngStyle]="{width: width + 'rem'}">
     <div class="card">
       
