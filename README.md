@@ -1,6 +1,7 @@
 # GameManager
-This is an app made with Angular that handles local game data. And you can filter the game-list by typing in the form above.  
-Simple.
+This is an app made with Angular that handles game data. And you can filter the game-list by typing in the form above.  
+Simple.  
+**Important** : For this version, [this API](https://github.com/jponcy/fake-game-api) must be running.
 
 
 # GameManager : Angular ℹ
