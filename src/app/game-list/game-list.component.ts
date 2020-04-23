@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {GameFilter} from '../game-list-filter/game-list-filter.component' ; 
 import { GameCategoryFakeApiServiceService as APIGames } from '../game-category-fake-api-service.service' ;
-import { Game } from '../GameInterface';
+import { Game , GameFromAPI} from '../GameInterface';
 import { Observable } from 'rxjs';
 import { games } from './game-data';
 
