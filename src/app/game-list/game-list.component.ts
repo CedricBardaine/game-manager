@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {GameFilter} from '../game-list-filter/game-list-filter.component' ; 
 import { GameCategoryFakeApiServiceService as APIGames } from '../game-category-fake-api-service.service' ;
-import { Game } from '../GameInterface';
+import { Game , GameFromAPI} from '../GameInterface';
 import { Observable } from 'rxjs';
 import { games } from './game-data';
 
@@ -66,13 +66,13 @@ export class GameListComponent implements OnInit {
         if(this.filterForm) {
           this.listeJeuxFiltree = this.listeJeux
           .filter(
-            e => ( !this.filterForm.name || e.nom.toLowerCase().includes(this.filterForm.name) )
-            && ( !this.filterForm.category || e.type === this.filterForm.category )
+            e => ( !this.filterForm.name.toLowerCase() || e.nom.toLowerCase().includes(this.filterForm.name.toLowerCase()) )
+            && ( !this.filterForm.category.toLowerCase() || e.type.toLowerCase().includes (this.filterForm.category.toLowerCase()) )
             && ( !this.filterForm.editor || e.editor.toLowerCase().includes(this.filterForm.editor) ) 
             ) ; 
           }
           else 
-            this.listeJeuxFiltree = this.listeJeux ; 
+          this.listeJeuxFiltree = this.listeJeux ; 
         }  
       }
       

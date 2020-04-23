@@ -1,6 +1,6 @@
 import {Game} from '../GameInterface' ; 
 
-export const games: Game[] = [
+export var games: Game[] = [
       {
         nom: 'CallOfDuty' ,
         type: 'fps' ,

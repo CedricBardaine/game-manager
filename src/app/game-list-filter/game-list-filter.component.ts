@@ -16,7 +16,7 @@ export class GameListFilterComponent implements OnInit {
   ngOnInit() { }
   
   
-  typesJeu = ["rpg", "plateforme", "fps", "combat" ] ; 
+  typesJeu = ["rpg", "platformer", "fps", "combat" ] ; 
   
   form: GameFilter = {name: '' , category: '' , editor: ''} ;
   
