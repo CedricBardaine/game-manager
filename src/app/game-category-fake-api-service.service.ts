@@ -29,7 +29,14 @@ export class GameCategoryFakeApiServiceService {
       var gameRet:Game[] ; 
       gamesFromAPI.forEach(e => {
         // console.log(e.title);
-        let gameToAdd:Game = {} ;
+        let gameToAdd:Game = {
+          nom: "",
+          type: "",
+          image: "",
+          note: null,
+          description: "",
+          editor: "",
+        } ;
         gameToAdd.nom = "";
         gameToAdd.type = "" ; 
         gameToAdd.image = "" ; 
