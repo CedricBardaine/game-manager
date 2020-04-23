@@ -6,3 +6,13 @@ export interface Game {
     description: String ,
     editor: String
 }
+
+export interface GameFromAPI {
+    id:number,
+    title:String,
+    genres:number[],
+    publisher:number,
+    description:String,
+    developer:number,
+    coverImage:String
+}
