@@ -5,6 +5,9 @@ import { Game } from '../GameInterface';
 import { Observable } from 'rxjs';
 import { games } from './game-data';
 
+
+import { delay } from "rxjs/operators";
+
 @Component({
   selector: 'app-game-list',
   templateUrl: './game-list.component.html',
@@ -40,13 +43,13 @@ export class GameListComponent implements OnInit {
   constructor(private gameApi: APIGames ) { }
   
   ngOnInit() {
-    this.gameApi.getAll().subscribe( 
+    this.gameApi.getAll().pipe(delay(2000)).subscribe( 
       games => { 
         this.listeJeux = games ; 
         this.filter(); 
       } ,
       error => console.log(error) 
-      ) ; 
+      ); 
     }
     
     sizeUp() { this.width += 1 ; }
