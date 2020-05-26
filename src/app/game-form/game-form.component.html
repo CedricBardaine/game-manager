@@ -1,0 +1,7 @@
+<div *ngIf="isNew ;else editForm">
+    NEW
+</div>
+
+<ng-template #editForm>
+    EDIT {{theIdProduct}}
+</ng-template>

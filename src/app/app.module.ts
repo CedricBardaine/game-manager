@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 // routing
 import { RouterModule } from '@angular/router';
 import { GameDetailsComponent } from './game-details/game-details.component';
+import { GameFormComponent } from './game-form/game-form.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { GameDetailsComponent } from './game-details/game-details.component';
     GameListFilterComponent,
     ActionButtonComponent,
     NotFoundComponent,
-    GameDetailsComponent
+    GameDetailsComponent,
+    GameFormComponent
   ],
   imports: [
     BrowserModule,
