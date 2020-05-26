@@ -1,0 +1,13 @@
+<div class="gameDetails" *ngIf="theGame.nom ;else NoGameFound"> 
+    
+    <p> <span class="gameName"> {{theGame.nom}} </span> </p>
+    <img src="{{theGame.image}}" alt="">
+    <p> <span class="gameDescription"> {{theGame.description}} </span> </p>
+</div>
+
+
+<ng-template #NoGameFound >
+    <div class="noGameFound gameDetails">
+        NO GAME FOUND
+    </div>
+</ng-template>

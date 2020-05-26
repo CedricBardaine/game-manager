@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 // routing
 import { RouterModule } from '@angular/router';
+import { GameDetailsComponent } from './game-details/game-details.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { RouterModule } from '@angular/router';
     GameListComponent,
     GameListFilterComponent,
     ActionButtonComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    GameDetailsComponent
   ],
   imports: [
     BrowserModule,
