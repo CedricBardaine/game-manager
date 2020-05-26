@@ -30,6 +30,7 @@ export class GameCategoryFakeApiServiceService {
       gamesFromAPI.forEach(e => {
         // console.log(e.title);
         let gameToAdd:Game = {
+          id: null,
           nom: "",
           type: "",
           image: "",
@@ -43,6 +44,7 @@ export class GameCategoryFakeApiServiceService {
         gameToAdd.description = "" ; 
         gameToAdd.editor = "" ;
         
+        gameToAdd.id = e.id ; 
         gameToAdd.nom = e.title ; 
         e.genres.forEach(idG => {
           if (idG == 1) gameToAdd.type += "Action ";
