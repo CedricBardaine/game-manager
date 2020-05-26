@@ -31,6 +31,7 @@ export class GameDetailsComponent implements OnInit {
 
   fetchTheGameFromAPI(lid: number):Game {
     var gameRet:Game = {
+      id: null,
       nom: null,
       type: null,
       image: null,

@@ -18,7 +18,7 @@
       
       <h2>{{jeu.nom}}</h2> 
       <p>Type : {{jeu.type}}</p>
-      <img [src]="jeu.image" alt="image" >
+      <img [src]="jeu.image" alt="image" (click)="seeDetails(jeu.id)" style="cursor: pointer;">
       <p>Note : {{jeu.note ? jeu.note+'/10' : 'MISSING'}}</p>
       <p>{{trimDescription( jeu.description , 120)  }} </p>
       <app-action-button 
