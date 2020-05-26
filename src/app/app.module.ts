@@ -8,17 +8,10 @@ import { ActionButtonComponent } from './action-button/action-button.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AppRoutingModule } from './app-routing.module';
-import { Routes, RouterModule } from '@angular/router';
 
 
-const appRoutes: Routes = [
-  { path: 'product', component: GameListComponent },
-  { path: 'NotFoundComponent', component: NotFoundComponent },
-  
-  { path: '',   redirectTo: '/product', pathMatch: 'full' },
-  { path: '**', component: NotFoundComponent },
-];
-
+// routing
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -32,10 +25,7 @@ const appRoutes: Routes = [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    RouterModule.forRoot(
-      appRoutes,
-      // {enableTracing: true} 
-      ),
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

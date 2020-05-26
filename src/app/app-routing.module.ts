@@ -1,11 +1,20 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { NgModule, Component } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { GameListComponent } from './game-list/game-list.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
-
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'product', component: GameListComponent },
+  { path: '', redirectTo: '/product', pathMatch: 'full'},
+  { path: '**', component: NotFoundComponent }
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  declarations: [],
+  imports: [
+    CommonModule,
+    RouterModule.forRoot(routes, {})
+  ]
 })
 export class AppRoutingModule { }
