@@ -5,6 +5,8 @@ import { Game , GameFromAPI} from '../GameInterface';
 import { Observable } from 'rxjs';
 import { games } from './game-data';
 
+import { RouterModule, Routes, Router} from '@angular/router';
+
 
 import { delay } from "rxjs/operators";
 
@@ -40,7 +42,7 @@ export class GameListComponent implements OnInit {
     return alert(action + " a ete effectue sur le jeu "+ nomJeu) ; 
   }
   
-  constructor(private gameApi: APIGames ) { }
+  constructor(private gameApi: APIGames, private router: Router ) { }
   
   ngOnInit() {
     this.gameApi.getAll().pipe(delay(2000)).subscribe( 
@@ -76,4 +78,9 @@ export class GameListComponent implements OnInit {
         }  
       }
       
+
+      seeDetails(id:number) {
+        console.log(id);
+        this.router.navigate(['/product/'+id])
+      }
     }

@@ -1,4 +1,5 @@
 export interface Game {
+    id: number,
     nom: String ,
     type: String ,
     image: String ,
